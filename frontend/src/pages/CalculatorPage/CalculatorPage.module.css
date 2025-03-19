@@ -61,29 +61,14 @@
 
 .bloodTypeLabel {
     width: 220px;
-    font-weight: 550;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 16px;
     border-bottom: 1px solid #E0E0E0;
     padding: 8px;
     letter-spacing: 4%;
 }
 
-.bloodTypeContainer {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    position: absolute;
-    top: 100px;
-}
 
-.bloodTypeLabel {
-    width: 240px;
-    font-weight: 550;
-    font-size: 14px;
-    border-bottom: 1px solid #E0E0E0;
-    padding: 8px;
-    letter-spacing: 4%;
-}
 
 .bloodTypeOptions {
     display: flex;
