@@ -1,0 +1,590 @@
+.home {
+    position: relative;
+    width: 100vw; 
+    height: 100vh; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    overflow: hidden; 
+    background-color: white; 
+}
+
+.homeContainer {
+    font-family: Verdana, Geneva, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+}
+
+.verticalBar {
+    position: absolute;
+    height: 24px;
+    width: 2px;
+    background-color: #E0E0E0;
+    margin: 0 16px;
+    top: 85px;
+    left: 190px;
+    border-width: 2px;
+}
+
+.nav {
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 90px;
+    left: 230px;
+}
+
+.navLink {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #9B9FAA;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 4%;
+}
+
+.navLink:hover {
+    color:#212121;
+}
+
+.navLink:focus{
+    color: #212121;
+}
+
+.navLink:active {
+    color: #212121;
+}
+
+.headerBar{
+    display: none;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: bold;
+    color: #212121;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    left: 40px;
+    top: 200px;
+}
+
+.formContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    left: 16px;
+    top: 350px;
+    color: #9B9FAA;
+}
+
+.inputField {
+    width: 240px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+    outline: none;
+    font-size: 14px;
+    font-weight: 550;
+    background-color: transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.inputField:focus {
+    border-bottom: 2px solid #FC842D;
+}
+
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 32px;
+}
+
+.bloodTypeContainer {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    position: absolute;
+    top: 100px;
+}
+
+.bloodTypeLabel {
+    width: 240px;
+    font-weight: 550;
+    font-size: 14px;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 8px;
+    letter-spacing: 4%;
+}
+
+.bloodTypeOptions {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.bloodTypeOptions li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.bloodTypeOptions input[type="radio"] {
+    width: 20px; 
+    height: 20px;
+    border: 2px solid #E0E0E0;
+    border-radius: 50%; 
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.bloodTypeOptions input[type="radio"]::before {
+    content: "";
+    width: 10px; 
+    height: 10px;
+    background-color: transparent; 
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    border: none;
+}
+
+.bloodTypeOptions input[type="radio"]:checked::before {
+    background-color: #FC842D;
+    opacity: 1;
+}
+
+.bloodTypeOptions input[type="radio"]:checked {
+    border-color: #FC842D;
+    background-color: #FC842D;
+}
+
+.bloodTypeOptions input[type="radio"]:checked + span {
+    color: #FC842D;
+}
+
+.bloodTypeOptions span {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.submitButton {
+    position: absolute;
+    bottom: -70px;
+    right: -220px;
+    background-color: #FC842D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(252, 132, 45, 0.5);
+}
+
+.submitButton:hover {
+    background-color: white;
+    color: #FC842D;
+    border: 1px solid #FC842D;
+}
+
+.caloriesNumber {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FC842D;
+    margin: 10px 0;
+}
+
+.modalDivider {
+    width: 100%;
+    height: 2px;
+    background: #9B9FAA;
+    border: none;
+    margin: 10px 0;
+}
+
+.forbiddenList {
+    list-style: none;
+    padding: 0;
+}
+
+.forbiddenList li {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.2s ease-in-out;
+}
+
+.closeButton:hover {
+    color: #FC842D;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    height: 500px; 
+}
+
+.modalTitle{
+    color: #212121;
+    font-family: Verdana;
+font-weight: 700;
+font-size: 26px;
+line-height: 140%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+
+.caloriesNumber {
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-align: center;
+    color: #264061;
+    margin: 10px 0;
+}
+
+.modalDivider {
+    width: 330px;
+    height: 1px;
+    background: #E0E0E0;
+    border: none;
+    margin: 20px auto;  
+    display: block;
+}
+
+.title2 {
+    color: #212121;
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.forbiddenList {
+    font-family: Verdana;
+    padding: 10px;
+    text-align: left;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 200px; 
+    overflow-y: auto;  
+    border: 1px solid #E0E0E0; 
+    border-radius: 5px;
+    background: #FAFAFA; 
+}
+
+.forbiddenList li {
+    font-size: 14px;
+    color: #9B9FAA;
+    margin: 5px 0;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.startButtonModal {
+    position: relative;
+    display: block;
+    margin: 20px auto 0; 
+    background-color: #FC842D;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(252, 132, 45, 0.5);
+}
+
+.startButtonModal:hover {
+    background-color: white;
+    color: #FC842D;
+    border: 2px solid #FC842D;
+}
+
+@media (max-width: 768px) {
+    .home{
+        display: none;
+    }
+
+    .verticalBar {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-between;
+        
+    }
+
+    .nav {
+        display: flex;
+        gap: 7vw; 
+        flex-wrap: nowrap; 
+        left: 35%;
+        top: 50px;
+    }
+
+    .headerBar{
+        display: flex;
+        width: 100%;
+        height: 2px; 
+        background-color: #E0E0E0;
+        position: relative;
+        bottom: 0;
+        top: 100px;
+    }
+
+    .title {
+        font-size: 18px;
+        text-align: left;
+        transform: translateX(-50%);
+        top: 150px;
+        left: 57%;
+    }
+
+    .formContainer {
+        grid-template-columns: 1fr;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 210px;
+        width: 90%;
+    }
+
+    .leftColumn{
+        gap: 20px;
+    }
+
+    .rightColumn{
+        margin-top: 8px;
+        margin-left: 1%;
+    }
+
+    .bloodTypeContainer {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        position: absolute;
+        top: 260px;
+    }
+
+    .submitButton {
+        position: relative;
+        bottom: auto;
+        margin-top: 100px;
+        left: 15%;
+    }
+
+    .modalDivider{
+        width: auto;
+    }
+
+    .titleModal{
+        align-items: flex-start;
+        text-align: left;
+        padding: auto;
+    }
+
+    .caloriesNumber{
+        padding: 10px;
+    }
+
+    .title2{
+        align-items: flex-start;
+        text-align: left;
+        position: relative;
+        left: -30px;
+    }
+
+    .forbiddenList{
+        position: relative;
+        left: -20px;
+    }
+
+    .startButtonModal{
+position: relative;
+left: -20px;
+    }
+
+    .backButtonBar{
+        position: relative;
+        background-color: #EFF1F3;
+        width: 100vw;
+        height: 40px;
+        top: 100px;
+    }
+
+    .svgBackButtonModal{
+        width: 12px;
+        height: 7px;
+        position: relative;
+        top: 8px;
+        left: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .home {
+        width: 100vw;
+        height: 1000px; 
+    }
+    
+    .verticalBar{
+        display: none;
+    }
+    
+    .header {
+        justify-content: space-between; 
+        position: absolute;
+        top: -20px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 24px; 
+        flex-wrap: nowrap; 
+        right: 160px;
+        top: 60px;
+    }
+
+    .headerBar{
+        display: flex;
+        width: 100%;
+        height: 2px; 
+        background-color: #E0E0E0; 
+        position: absolute;
+        top: 80px;
+    }
+
+    .title{
+        top: 150px;
+    }
+
+    .formContainer{
+        top: 280px;
+        gap: 10px;
+    }
+    
+    .inputField {
+        width: 200px;
+        padding: 5px;
+        font-size: 14px;
+    }
+    
+    .leftColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .rightColumn {
+       gap: 25px;
+        margin-left: 32px;
+    }
+
+.bloodTypeContainer {
+    top: 75px;
+}
+
+.bloodTypeOptions {
+    gap: 10px;
+}
+
+.submitButton {
+    bottom: -70px;
+    left: 30px;
+}
+
+}

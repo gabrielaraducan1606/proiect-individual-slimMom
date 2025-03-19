@@ -1,0 +1,306 @@
+.home {
+    position: relative;
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    overflow: hidden; 
+    background-color: white; 
+}
+
+.register{
+    font-family: Verdana, Geneva, sans-serif;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.registerContainer{
+position: absolute;
+display: flex;
+flex-direction: column;
+padding-left: 26px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: -133px;
+    left: 0;
+    width: 500px;
+}
+
+.titleRegister{
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+    text-align: left;
+    color: #FC842D;
+    margin-top: 80px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.verticalBar {
+    position: absolute;
+    height: 24px;
+    width: 2px;
+    background-color: #E0E0E0;
+    margin: 0 16px;
+    top: 85px;
+    left: 190px;
+    border-width: 2px;
+}
+
+.nav {
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 90px;
+    left: 230px;
+}
+
+.navLink {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #9B9FAA;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 4%;
+}
+
+.navLink:hover {
+    color:#212121;
+}
+
+.navLink:focus{
+    color: #212121;
+}
+
+.navLink:active {
+    color: #212121;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    width: 100%;
+    max-width: 320px;
+}
+
+form input {
+    width: 240px;
+    padding: 20px;
+    padding-left: 0;
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+    outline: none;
+    font-size: 14px;
+    font-weight: 550;
+    background-color: transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+form input:focus {
+    border-bottom: 2px solid #FC842D;
+}
+
+form input::placeholder {
+    color: #9B9FAA; 
+    opacity: 1; 
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 4%;
+}
+
+form input:-ms-input-placeholder { 
+    color: #9B9FAA;
+}
+
+form input::-ms-input-placeholder { 
+    color: #9B9FAA;
+}
+
+.buttonContainer{
+    display: flex;
+    gap: 32px;
+}
+
+form button {
+    background-color: #FC842D;
+    color: white;
+    padding: 13px 50px;
+    border: none;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    width: 181px;
+    margin-top: 60px;
+}
+
+.registerButton{
+    box-shadow: 0px 5px 10px rgba(252, 132, 45, 0.5);
+}
+
+form button:hover {
+    background-color: white;
+    color: #FC842D;
+    border: 2px solid #FC842D;
+}
+
+.loginButton{
+    background-color: white;
+    color: #FC842D;
+    border: 1px solid #FC842D;
+    padding: 13px 50px;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    width: 181px;
+    margin-top: 60px;
+}
+
+.button, .loginButton {
+    transform: translateY(0);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.button:active, .loginButton:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 5px rgba(252, 132, 45, 0.5);
+}
+
+@media (max-width: 768px) {
+    .home{
+        display: none;
+    }
+
+    .header {
+        justify-content: space-between;
+        gap: auto;
+    }
+
+    .logoContainer{
+        position: relative;
+        top: 70px;
+    }
+
+    .nav {
+        position: absolute;
+        display: flex;
+        gap: 7vw; 
+        flex-wrap: nowrap; 
+        left: 30%;
+        top: 120px;
+    }
+
+    .verticalBar{
+        display: none;
+    }
+
+    
+    .headerBar{
+        display: flex;
+        width: 100vw;
+        height: 2px;
+        background-color: #E0E0E0; 
+        position: relative;
+        bottom: 0;
+        top: 30px;
+        left: 0;
+    }
+
+    .buttonContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: -10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .titleRegister{
+        text-align: center;
+    }
+
+    .loginButton{
+margin-top: 20px;
+    }
+
+    .formContainer{
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .home {
+        width: 100vw;
+        height: 1000px; 
+    }
+    
+    .verticalBar{
+        display: none;
+    }
+    
+    .header {
+        justify-content: space-between; 
+        position: absolute;
+        top: 20px;
+    }
+
+    .logoContainer{
+position: absolute;
+top: -140px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 24px; 
+        flex-wrap: nowrap; 
+        top: -80px;
+        width: 200px;
+    }
+
+    .headerBar{
+        display: flex;
+        width: 100vw;
+        height: 2px; 
+        background-color: #E0E0E0; 
+        position: absolute;
+        top: -10px;
+    }
+
+    .buttonContainer{
+        margin-top: -10px;
+    }
+
+    .titleRegister{
+        margin-top: 40px;
+    }
+}

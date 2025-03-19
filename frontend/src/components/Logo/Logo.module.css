@@ -1,0 +1,36 @@
+.logoContainer {
+    position: absolute;
+top: 40px;
+left: 16px;
+}
+
+.logo {
+    width: 167;
+    height: 66;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .logoContainer{
+        width: 46px;
+        left: 20px;
+        top: 20px;
+    }
+
+    .logo{
+        clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 14% 100%, 0% 100%);
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .logoContainer{
+left: 30px;
+    }
+
+    .logo{
+        width: 116px;
+        height: 46px;
+    }
+}

@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 24px;
+}
+
+/* Stilizare Logo */
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+/* Bara Verticală */
+.verticalBar {
+    height: 24px;
+    width: 2px;
+    background-color: #9B9FAA;
+    margin: 0 16px;
+}
+
+/* Meniu Login & Register */
+.nav {
+    display: flex;
+    gap: 16px;
+}
+
+.navLink {
+    color: #9B9FAA;
+    font-family: Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: #7D7F85;
+}
+
+/* User Info */
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .verticalBar {
+        display: none;
+    }
+
+    .nav {
+        margin-top: 8px;
+    }
+
+    .userInfo {
+        margin-top: 8px;
+    }
+}

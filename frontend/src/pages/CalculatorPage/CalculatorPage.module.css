@@ -1,0 +1,176 @@
+.title {
+    font-size: 34px;
+    font-weight: bold;
+    color: #212121;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    left: 40px;
+    top: 200px;
+}
+
+.formContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    left: 16px;
+    top: 350px;
+    color: #9B9FAA;
+}
+
+.inputField {
+    width: 240px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+    outline: none;
+    font-size: 14px;
+    font-weight: 550;
+    background-color: transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.inputField:focus {
+    border-bottom: 2px solid #FC842D;
+}
+
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 32px;
+}
+
+.bloodTypeContainer {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    position: absolute;
+    top: 100px;
+}
+
+.bloodTypeLabel {
+    width: 220px;
+    font-weight: 550;
+    font-size: 14px;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 8px;
+    letter-spacing: 4%;
+}
+
+.bloodTypeContainer {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    position: absolute;
+    top: 100px;
+}
+
+.bloodTypeLabel {
+    width: 240px;
+    font-weight: 550;
+    font-size: 14px;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 8px;
+    letter-spacing: 4%;
+}
+
+.bloodTypeOptions {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.bloodTypeOptions li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.bloodTypeOptions input[type="radio"] {
+    width: 20px; 
+    height: 20px;
+    border: 2px solid #E0E0E0;
+    border-radius: 50%; 
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.bloodTypeOptions input[type="radio"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: transparent; 
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    border: none;
+}
+
+.bloodTypeOptions input[type="radio"]:checked::before {
+    background-color: #FC842D;
+    opacity: 1;
+}
+
+.bloodTypeOptions input[type="radio"]:checked {
+    border-color: #FC842D;
+    background-color: #FC842D;
+}
+
+.bloodTypeOptions input[type="radio"]:checked + span {
+    color: #FC842D;
+}
+
+.bloodTypeOptions span {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.submitButton {
+    position: absolute;
+    bottom: -70px;
+    right: -200px;
+    background-color: #FC842D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(252, 132, 45, 0.5);
+}
+
+.submitButton:hover {
+    background-color: white;
+    color: #FC842D;
+    border: 1px solid #FC842D;
+}

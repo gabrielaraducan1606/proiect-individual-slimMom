@@ -1,0 +1,23 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "homepage":"https://gabrielaraducan1606.github.io/proiect-individual-slimMom",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.6.1",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.3.0",
+    "redux": "^5.0.1",
+    "redux-persist": "^6.0.0"
+  }
+}

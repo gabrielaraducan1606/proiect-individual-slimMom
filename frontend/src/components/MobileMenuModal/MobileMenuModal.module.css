@@ -1,0 +1,115 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.modalHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    height: 60px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    height: 40px;
+}
+
+.menuButton {
+    background: none;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #212121;
+    padding: 5px 10px;
+}
+
+.menuButton:hover {
+    color: #FC842D;
+}
+
+.infoBar {
+    margin-top: 60px;
+    background: #EFF1F3;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navButton,
+.logoutButton {
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.navButton {
+    color: #212121;
+}
+
+.logoutButton {
+    color: #9B9FAA;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    background: #264061;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.sectionButton {
+    background: white;
+    color: #264061;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 15px 20px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sectionButton:hover {
+    background: #FC842D;
+    color: white;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .modalContent {
+        padding-top: 50px;
+    }
+
+    .sectionButton {
+        width: 90%;
+        font-size: 20px;
+        padding: 18px;
+    }
+}

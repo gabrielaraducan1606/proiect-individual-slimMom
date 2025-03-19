@@ -1,0 +1,296 @@
+.home {
+    position: relative;
+    width: 100vw; 
+    height: 100vh; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    overflow: hidden; 
+    background-color: white; 
+}
+
+.login{
+    font-family: Verdana, Geneva, sans-serif;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.loginContainer{
+position: absolute;
+display: flex;
+flex-direction: column;
+padding-left: 26px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: -183px;
+    left: 0;
+    width: 500px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.verticalBar {
+    position: absolute;
+    height: 24px;
+    width: 2px;
+    background-color: #E0E0E0;
+    margin: 0 16px;
+    top: 85px;
+    left: 190px;
+    border-width: 2px;
+}
+
+.nav {
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 90px;
+    left: 230px;
+}
+
+.navLink {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #9B9FAA;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 4%;
+}
+
+.navLink:hover {
+    color:#212121;
+}
+
+.navLink:focus{
+    color: #212121;
+}
+
+.navLink:active {
+    color: #212121;
+}
+
+.titleLogin {
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+    text-align: left;
+    color: #FC842D;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    width: 100%;
+    max-width: 320px;
+}
+
+form input {
+    width: 240px;
+    padding: 20px;
+    padding-left: 0;
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+    outline: none;
+    font-size: 14px;
+    font-weight: 550;
+    background-color: transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+form input:focus {
+    border-bottom: 2px solid #FC842D;
+}
+
+form input::placeholder {
+    color: #9B9FAA; 
+    opacity: 1; 
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 4%;
+}
+
+form input:-ms-input-placeholder { 
+    color: #9B9FAA;
+}
+
+form input::-ms-input-placeholder { 
+    color: #9B9FAA;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FC842D;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 200px;
+    white-space: nowrap;
+    letter-spacing: normal;
+}
+
+.button:hover {
+    background-color: white;
+    color: #FC842D;
+    border: 2px solid #FC842D;
+}
+
+.registerButton {
+    background-color: white;
+    color: #FC842D;
+    border: 2px solid #FC842D;
+}
+
+.loginButton{
+    box-shadow: 0px 5px 10px rgba(252, 132, 45, 0.5);
+}
+
+.button, .registerButton {
+    transform: translateY(0);
+}
+
+.button:active, .registerButton:active {
+    transform: translateY(2px);
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .home {
+        width: 100vw;
+        height: 1000px; 
+    }
+    
+    .verticalBar{
+        display: none;
+    }
+    
+    .header {
+        justify-content: space-between; 
+        position: absolute;
+        top: -20px;
+    }
+
+    .logoContainer{
+position: absolute;
+top: -140px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 24px; 
+        flex-wrap: nowrap; 
+        top: -80px;
+        width: 200px;
+    }
+
+    .headerBar{
+        display: flex;
+        width: 100vw;
+        height: 2px; 
+        background-color: #E0E0E0;
+        position: absolute;
+        top: -50px;
+    }
+
+    .buttonContainer{
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home{
+        display: none;
+    }
+
+    .header {
+        justify-content: space-between;
+        gap: auto;
+    }
+
+    .logoContainer{
+        position: relative;
+        top: 40px;
+    }
+
+    .nav {
+        position: absolute;
+        display: flex;
+        gap: 7vw; 
+        flex-wrap: nowrap; 
+        left: 35%;
+        top: 90px;
+    }
+
+    .verticalBar{
+        display: none;
+    }
+
+    
+    .headerBar{
+        display: flex;
+        width: 100vw;
+        height: 2px; 
+        background-color: #E0E0E0;
+        position: relative;
+        bottom: 0;
+        top: -40px;
+        left: 0;
+    }
+
+    .buttonContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: -10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .registerButton{
+        margin-top: 20px;
+    }
+
+    .titleLogin{
+        text-align: center;
+    }
+
+    .formContainer{
+        align-items: center;
+    }
+}

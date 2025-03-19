@@ -1,0 +1,141 @@
+.authContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.verticalBar {
+    position: absolute;
+    height: 24px;
+    width: 2px;
+    background-color: #E0E0E0;
+    margin: 0 16px;
+    top: 85px;
+    left: 190px;
+    border-width: 2px;
+}
+
+.nav {
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 90px;
+    left: 230px;
+}
+
+.navLink {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #9B9FAA;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 4%;
+}
+
+.navLink:hover {
+    color:#212121;
+}
+
+.navLink:focus{
+    color: #212121;
+}
+
+.navLink:active {
+    color: #212121;
+}
+
+.logoutButton {
+    background: none;
+    border: none;
+    color: #FC842D;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.logoutButton:hover {
+    color: #9B9FAA;
+}
+
+.menuButton{
+    display: none;
+}
+
+.infoBar{
+    display: none;
+}
+/*
+@media (max-width: 768px) {
+    .authContainer {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; 
+    }
+
+    .mainContent {
+        flex: 1; 
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .summaryContainer {
+        width: 100%;
+        background-color: #EFF1F3; 
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+    }
+
+    .menuButton {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        left: 100px;
+    }
+
+    .menuButton {
+        background: none;
+        border: none;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #212121;
+        padding: 5px 10px;
+    }
+    
+    .menuButton:hover {
+        color: #FC842D;
+    }
+    
+    .infoBar {
+        margin-top: 60px;
+        background: #EFF1F3;
+        width: 100%;
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+*/
