@@ -2,8 +2,7 @@
   "name": "frontend",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage":"https://gabrielaraducan1606.github.io/proiect-individual-slimMom",
-  
+  "homepage": "https://gabrielaraducan1606.github.io/proiect-individual-slimMom",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -24,6 +23,7 @@
     "@reduxjs/toolkit": "^2.6.1",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.3.0",
+    "react-scripts": "^5.0.1",
     "redux": "^5.0.1",
     "redux-persist": "^6.0.0"
   }
