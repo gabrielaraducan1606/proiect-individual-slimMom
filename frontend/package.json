@@ -13,7 +13,9 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +28,8 @@
     "react-scripts": "^5.0.1",
     "redux": "^5.0.1",
     "redux-persist": "^6.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
